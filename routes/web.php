@@ -13,7 +13,42 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    // return view('welcome');
-    return 'Hello Laravel';
-});
+// Route::get('/', function () {
+//     return view('welcome');
+//     // return 'Hello Laravel';
+// })->name('home'); 
+// // Data Show Page
+
+// Route::get('about',function(){
+// 	return view('aboutpage');
+// })->name('aboutname');
+
+
+
+
+
+Route::get('/','PageController@homefun')->name('home');
+
+Route::get('about','PageController@aboutfun')->name('about');
+
+Route::get('contact','PageController@contactfun')->name('contact');
+
+Route::get('simplepost','PageController@simplepostfun')->name('simplepost');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
